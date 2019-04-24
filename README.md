@@ -2,15 +2,15 @@
 
 
 
-# 我的套件
+## 套件管理
 
-## vim-sublime-monokai 下載網址
-##### github
+### vim-sublime-monokai 下載網址
+###### github
 https://github.com/ErichDonGubler/vim-sublime-monokai
-##### git
+###### git
 git clone https://github.com/ErichDonGubler/vim-sublime-monokai.git
-## NERDTree 下載網址
-##### github
+### NERDTree 下載網址
+###### github
 https://github.com/scrooloose/nerdtree
-##### git
+###### git
 git clone https://github.com/scrooloose/nerdtree.git
