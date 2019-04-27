@@ -10,14 +10,16 @@ mapleader = "-"
 
 `C-l` 關閉搜尋高亮度
 
-
-## 套件管理
+## 配色方案
 
 ### vim-sublime-monokai 下載網址
 ###### github
 https://github.com/ErichDonGubler/vim-sublime-monokai
 ###### git
 git clone https://github.com/ErichDonGubler/vim-sublime-monokai.git
+
+## 套件管理
+
 ### NERDTree 下載網址
 ###### github
 https://github.com/scrooloose/nerdtree
