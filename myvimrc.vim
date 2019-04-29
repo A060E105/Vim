@@ -7,6 +7,7 @@ set number
 set relativenumber
 set tabstop=4
 set shiftwidth=4
+set hlsearch
 set nobackup
 set noundofile
 set noswapfile
