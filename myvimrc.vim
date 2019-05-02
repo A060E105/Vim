@@ -3,11 +3,14 @@ let mapleader = "-"
 colorscheme sublimemonokai
 syntax enable
 set autoindent
+"set cindent
 set number
 set relativenumber
+set showcmd
 set tabstop=4
 set shiftwidth=4
 set hlsearch
+set incsearch
 set nobackup
 set noundofile
 set noswapfile
