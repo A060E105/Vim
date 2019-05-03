@@ -6,7 +6,10 @@ set autoindent
 "set cindent
 set number
 set relativenumber
+set ruler
 set showcmd
+set showmode
+set paste
 set tabstop=4
 set shiftwidth=4
 set hlsearch
@@ -16,6 +19,7 @@ set noundofile
 set noswapfile
 set cursorline
 set cursorcolumn
+set history=100
 "set guifont=courier_New:h18
 set guifont=consolas:h18
 set fileencodings=utf-8,big5
