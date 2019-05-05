@@ -9,7 +9,7 @@ set relativenumber
 set ruler
 set showcmd
 set showmode
-set paste
+"set paste
 set tabstop=4
 set shiftwidth=4
 set hlsearch
