@@ -1,7 +1,9 @@
 let mapleader = "-"
 
 colorscheme sublimemonokai
+filetype plugin on
 syntax enable
+set nocompatible
 set autoindent
 "set cindent
 set number
@@ -9,7 +11,6 @@ set relativenumber
 set ruler
 set showcmd
 set showmode
-"set paste
 set tabstop=4
 set shiftwidth=4
 set hlsearch
@@ -19,7 +20,7 @@ set noundofile
 set noswapfile
 set cursorline
 set cursorcolumn
-set history=100
+set history=200
 "set guifont=courier_New:h18
 set guifont=consolas:h18
 set fileencodings=utf-8,big5
@@ -27,6 +28,7 @@ set fileencodings=utf-8,big5
 hi cursorcolumn ctermbg=darkred guibg=darkred
 hi cursorline ctermbg=darkred guibg=darkred
 
+set pastetoggle=<F9>
 inoremap {<CR> {<CR>}<Esc>ko
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <silent> <F2> :<C-u>set number!<CR>
