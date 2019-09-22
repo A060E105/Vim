@@ -5,7 +5,7 @@ filetype plugin on
 syntax enable
 set nocompatible
 set autoindent
-"set cindent
+set cindent
 set number
 set relativenumber
 set ruler
@@ -34,3 +34,13 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <silent> <F2> :<C-u>set number!<CR>
 nnoremap <silent> <leader>n :<C-u>set relativenumber!<CR>
 nnoremap <silent> <F8> :<C-u>NERDTreeToggle<CR>
+
+"
+"  taglist
+"
+nnoremap <silent> <F7> :<C-u>TlistToggle<CR>
+
+let Tlist_Show_One_File=1
+let Tlist_WinWidth=40
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
