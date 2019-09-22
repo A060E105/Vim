@@ -54,6 +54,8 @@ $ sudo cp -a plugin/ /usr/share/vim/vim80/
 
 ### Ctags + Taglist 建立鏈接
 修改/usr/share/vim/vim80/plugin/taglist.vim  
-找到 if !exitsts(loaded_taglist)這一行在前面新增  
+找到  
+if !exitsts(loaded_taglist)  
+這一行在前面新增  
 let Tlist_Ctags_Cmd="/usr/local/bin/ctags"  
-P.S.：在設置ctags的路徑需要特別注意，因每臺電腦ctags的路徑不太相同。  
+_P.S.：在設置ctags的路徑需要特別注意，因每臺電腦ctags的路徑不太相同。_  
