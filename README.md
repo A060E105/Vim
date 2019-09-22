@@ -17,9 +17,9 @@ mapleader = "-"
 ## 配色方案
 
 ### vim-sublime-monokai 下載網址
-###### github
+#### github
 https://github.com/ErichDonGubler/vim-sublime-monokai
-###### git
+#### git
 git clone https://github.com/ErichDonGubler/vim-sublime-monokai.git
 
 ## 套件管理
