@@ -9,7 +9,7 @@ let mapleader = "-"
 
 `F8` 開啟/關閉目錄
 
-`F9` 開啟/關閉智慧粘貼
+`<leader>p` 開啟/關閉智慧粘貼
 
 `<leader>n` 開啟/關閉相對行數
 
@@ -21,7 +21,9 @@ let mapleader = "-"
 ###### github
 https://github.com/ErichDonGubler/vim-sublime-monokai
 ###### git
-git clone https://github.com/ErichDonGubler/vim-sublime-monokai.git
+$ git clone https://github.com/ErichDonGubler/vim-sublime-monokai.git   
+$ cd vim-sublime-monokai/
+$ sudo cp -a colors/ /usr/share/vim/vim80/
 
 ## 套件管理
 
@@ -29,7 +31,9 @@ git clone https://github.com/ErichDonGubler/vim-sublime-monokai.git
 ###### github
 https://github.com/scrooloose/nerdtree
 ###### git
-git clone https://github.com/scrooloose/nerdtree.git
+$ git clone https://github.com/scrooloose/nerdtree.git
+$ cd nerdtree/
+`$ sudo cp -a */ /usr/share/vim/vim80/`
 
 ### Ctags 安裝方式
 ###### 線上安裝  
@@ -60,3 +64,9 @@ if !exitsts(loaded_taglist)
 這一行在前面新增  
 let Tlist_Ctags_Cmd="/usr/local/bin/ctags"  
 _P.S.：在設置ctags的路徑需要特別注意，因每臺電腦ctags的路徑不太相同。_  
+
+### Source Explorer
+##### github
+https://github.com/wesleyche/SrcExpl
+##### git
+git clone https://github.com/wesleyche/SrcExpl.git

@@ -52,7 +52,7 @@ nnoremap <silent> <F2> :<C-u>set number!<CR>
 " 開啟/關閉相對行號
 nnoremap <silent> <leader>n :<C-u>set relativenumber!<CR>
 
-set pastetoggle=<F9>    " 設定F9為開啟/關閉paste
+set pastetoggle=<leader>p    " 設定-p為開啟/關閉paste
 inoremap {<CR> {<CR>}<Esc>ko
 " 關閉高亮搜尋
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
@@ -82,5 +82,10 @@ let g:SrcExpl_refreshTime=100       " 刷新時間設為100ms
 let g:SrcExpl_jumpKey="<ENTER>"     " 跳轉至相應定義
 let g:SrcExpl_gobackKey="<SPACE>"   " back
 let g:SrcExpl_isUpdateTags=0        " tag file update=off
+let g:SrcExpl_pluginList=[
+	\ "__Tag_List__",
+	\ "_NERD_tree_",
+	\ "Source_Explorer"
+	\ ]
 " 開啟/關閉SrcExpl視窗
 nnoremap <silent> <F6> :<C-u>SrcExplToggle<CR>
