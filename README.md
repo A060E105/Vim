@@ -1,6 +1,7 @@
 # 我的Vim配置
 
-mapleader = "-"
+前綴為`-`
+let mapleader = "-"
 
 `F2` 顯示/關閉行號
 
