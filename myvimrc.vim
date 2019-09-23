@@ -7,7 +7,7 @@ let mapleader = "-"     " 設定前綴
 colorscheme sublimemonokai      " 使用sublime風格的配色
 filetype plugin on              " 開啟文件類型檢測
 syntax enable                   " 開啟語法高亮提示
-set autochdir					" 自動切換到當前文件的所在目錄
+set autochdir                   " 自動切換到當前文件的所在目錄
 set nocompatible                " 關閉非相容模式，不與vi相容
 set autoindent                  " 啟用自動縮排
 set cindent                     " 啟用C、C++風格的縮排
@@ -84,9 +84,9 @@ let g:SrcExpl_jumpKey="<ENTER>"     " 跳轉至相應定義
 let g:SrcExpl_gobackKey="<SPACE>"   " back
 let g:SrcExpl_isUpdateTags=0        " tag file update=off
 let g:SrcExpl_pluginList=[
-	\ "__Tag_List__",
-	\ "_NERD_tree_",
-	\ "Source_Explorer"
-	\ ]
+    \ "__Tag_List__",
+    \ "_NERD_tree_",
+    \ "Source_Explorer"
+    \ ]
 " 開啟/關閉SrcExpl視窗
 nnoremap <silent> <F6> :<C-u>SrcExplToggle<CR>
