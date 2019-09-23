@@ -7,6 +7,7 @@ let mapleader = "-"     " 設定前綴
 colorscheme sublimemonokai      " 使用sublime風格的配色
 filetype plugin on              " 開啟文件類型檢測
 syntax enable                   " 開啟語法高亮提示
+set autochdir					" 自動切換到當前文件的所在目錄
 set nocompatible                " 關閉非相容模式，不與vi相容
 set autoindent                  " 啟用自動縮排
 set cindent                     " 啟用C、C++風格的縮排
