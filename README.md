@@ -1,6 +1,6 @@
 # 我的Vim配置
 
-前綴為`-` <leader>將表示-   
+前綴為`-` \<leader\>將表示-   
 let mapleader = "-"
 
 `F2` 顯示/關閉行號
