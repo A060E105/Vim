@@ -22,8 +22,8 @@ let mapleader = "-"
 https://github.com/ErichDonGubler/vim-sublime-monokai
 ###### git
 $ git clone https://github.com/ErichDonGubler/vim-sublime-monokai.git   
-$ cd vim-sublime-monokai/
-$ sudo cp -a colors/ /usr/share/vim/vim80/
+$ cd vim-sublime-monokai/  
+$ sudo cp -a colors/ /usr/share/vim/vim80/  
 
 ## 套件管理
 
