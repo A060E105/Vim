@@ -33,7 +33,7 @@ https://github.com/scrooloose/nerdtree
 ###### git
 $ git clone https://github.com/scrooloose/nerdtree.git  
 $ cd nerdtree/  
-`$ sudo cp -a */ /usr/share/vim/vim80/`   
+$ sudo cp -a \*/ /usr/share/vim/vim80/   
 
 ### Ctags 安裝方式
 ###### 線上安裝  
