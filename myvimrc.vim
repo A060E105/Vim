@@ -8,7 +8,7 @@ colorscheme sublimemonokai      " 使用sublime風格的配色
 filetype plugin on              " 開啟文件類型檢測
 syntax enable                   " 開啟語法高亮提示
 set autochdir                   " 自動切換到當前文件的所在目錄
-set nocompatible                " 關閉非相容模式，不與vi相容
+set nocompatible                " 關閉相容模式，不與vi相容
 set autoindent                  " 啟用自動縮排
 set cindent                     " 啟用C、C++風格的縮排
 set ruler                       " 開啟右下角遊標座標
@@ -25,6 +25,7 @@ set history=200                 " 歷史記錄為200筆
 " ##################
 "set guifont=courier_New:h18    " gvim字型使用courier_New，字體大小設為18
 set guifont=consolas:h18        " gvim字型使用consolas，字體大小設為18
+set fileencoding=utf-8          " 新檔案使用utf-8編碼
 set fileencodings=utf-8,big5    " 開啟檔案時依序使用utf-8及big5編碼來顯示
 
 " ##################
