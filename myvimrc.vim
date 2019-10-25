@@ -49,7 +49,7 @@ hi cursorline ctermbg=darkred guibg=darkred
 " #################
 set laststatus=2        " 開啟狀態列
 " 狀態列要顯示的資訊
-set statusline=[%{expand('%:p')}][%{strlen(&fenc)?&fenc:&enc},\ %{&ff},\ %{strlen(&filetype)?&filetype:'plain'}]%{Fi    leSize()}%{IsBinary()}%=%c,%l/%L\ [%3p%%]
+set statusline=[%{expand('%:p')}][%{strlen(&fenc)?&fenc:&enc},\ %{&ff},\ %{strlen(&filetype)?&filetype:'plain'}]%{FileSize()}%{IsBinary()}%=%c,%l/%L\ [%3p%%]
 " 開啟/關閉狀態列
 nnoremap <silent> <leader>l :<C-u>call StatusLineToggle()<CR>
 
