@@ -45,6 +45,46 @@ hi cursorcolumn ctermbg=darkred guibg=darkred
 hi cursorline ctermbg=darkred guibg=darkred
 
 " #################
+"    狀態列設定
+" #################
+set laststatus=2        " 開啟狀態列
+" 狀態列要顯示的資訊
+set statusline=[%{expand('%:p')}][%{strlen(&fenc)?&fenc:&enc},\ %{&ff},\ %{strlen(&filetype)?&filetype:'plain'}]%{Fi    leSize()}%{IsBinary()}%=%c,%l/%L\ [%3p%%]
+" 開啟/關閉狀態列
+nnoremap <silent> <leader>l :<C-u>call StatusLineToggle()<CR>
+
+" 狀態列會使用到的函式
+function IsBinary()
+    if (&binary == 0)
+        return ""
+    else
+        return "[Binary]"
+    endif
+endfunction
+
+function FileSize()
+    let bytes = getfsize(expand("%:p"))
+    if bytes <= 0
+        return "[Empty]"
+    endif
+    if bytes < 1024
+        return "[" . bytes . "B]"
+    elseif bytes < 1048576
+        return "[" . (bytes / 1024) . "KB]"
+    else
+        return "[" . (bytes / 1048576) . "MB"
+    endif
+endfunction
+
+function StatusLineToggle()
+    if (&laststatus == 1)
+        set laststatus=2
+    elseif (&laststatus == 2)
+        set laststatus=1
+    endif
+endfunction
+
+" #################
 "     行號設定
 " #################
 set number              " 顯示行號
