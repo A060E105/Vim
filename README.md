@@ -13,6 +13,8 @@ let mapleader = "-"
 
 `<leader>n` 開啟/關閉相對行數
 
+`<leader>l` 開啟/關閉狀態列
+
 `C-l` 關閉搜尋高亮度
 
 ## 配色方案
