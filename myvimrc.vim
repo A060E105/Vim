@@ -95,6 +95,7 @@ nnoremap <silent> <F2> :<C-u>set number!<CR>
 nnoremap <silent> <leader>n :<C-u>set relativenumber!<CR>
 
 set pastetoggle=<leader>p    " 設定-p為開啟/關閉paste
+nnoremap <silent> <leader>p :<C-u>echo (&paste)?"paste":"nopaste"<CR><leader>p
 inoremap {<CR> {<CR>}<Esc>ko
 " 關閉高亮搜尋
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
