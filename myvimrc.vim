@@ -41,8 +41,8 @@ set noswapfile          " 關閉自動備份檔案功能
 set cursorline          " 顯示遊標所在的列
 set cursorcolumn        " 顯示遊標所在的行
 " 顏色設為淡紅色
-hi cursorcolumn ctermbg=darkred guibg=darkred
-hi cursorline ctermbg=darkred guibg=darkred
+hi cursorcolumn cterm=None ctermbg=darkred guibg=darkred
+hi cursorline cterm=None ctermbg=darkred guibg=darkred
 
 " #################
 "    狀態列設定
