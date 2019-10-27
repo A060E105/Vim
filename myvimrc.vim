@@ -49,11 +49,19 @@ hi cursorline cterm=None ctermbg=darkred guibg=darkred
 " #################
 set laststatus=2        " 開啟狀態列
 " 狀態列要顯示的資訊
-set statusline=[%{expand('%:p')}][%{strlen(&fenc)?&fenc:&enc},\ %{&ff},\ %{strlen(&filetype)?&filetype:'plain'}]%{FileSize()}%{IsBinary()}%=%c,%l/%L\ [%3p%%]
+set statusline=[%{expand('%:p')}][%{strlen(&fenc)?&fenc:&enc},\ %{&ff},\ %{strlen(&filetype)?&filetype:'plain'}]%{FileSize()}%{IsBinary()}%=%c,%l/%L\ [%3p%%]%{ShowPaste()}
 " 開啟/關閉狀態列
 nnoremap <silent> <leader>l :<C-u>call StatusLineToggle()<CR>
 
 " 狀態列會使用到的函式
+function ShowPaste()
+	if (&paste == 1)
+		return "[paste]"
+	else
+		return ""
+	endif
+endfunction
+
 function IsBinary()
     if (&binary == 0)
         return ""
@@ -95,7 +103,6 @@ nnoremap <silent> <F2> :<C-u>set number!<CR>
 nnoremap <silent> <leader>n :<C-u>set relativenumber!<CR>
 
 set pastetoggle=<leader>p    " 設定-p為開啟/關閉paste
-nnoremap <silent> <leader>p :<C-u>echo (&paste)?"paste":"nopaste"<CR><leader>p
 inoremap {<CR> {<CR>}<Esc>ko
 " 關閉高亮搜尋
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
