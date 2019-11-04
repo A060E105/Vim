@@ -1,6 +1,7 @@
 " #################
 "    我的VIM配置
 " #################
+" set background=dark           " 設定背景色為淡色
 
 let mapleader = "-"     " 設定前綴
 
@@ -55,11 +56,11 @@ nnoremap <silent> <leader>l :<C-u>call StatusLineToggle()<CR>
 
 " 狀態列會使用到的函式
 function ShowPaste()
-	if (&paste == 1)
-		return "[paste]"
-	else
-		return ""
-	endif
+    if (&paste == 1)
+        return "[paste]"
+    else
+        return ""
+    endif
 endfunction
 
 function IsBinary()
