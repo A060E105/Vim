@@ -1,0 +1,4 @@
+set editing-mode vi
+set show-mode-in-prompt on
+set vi-ins-mode-string "\033\[01;34m(ins)"
+set vi-cmd-mode-string "\033\[01;31m(cmd)"
