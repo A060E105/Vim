@@ -1,6 +1,7 @@
 " #################
 "    我的VIM配置
 " #################
+
 " set background=dark           " 設定背景色為淡色
 
 let mapleader = "-"     " 設定前綴
@@ -81,7 +82,7 @@ function FileSize()
     elseif bytes < 1048576
         return "[" . (bytes / 1024) . "KB]"
     else
-        return "[" . (bytes / 1048576) . "MB"
+        return "[" . (bytes / 1048576) . "MB]"
     endif
 endfunction
 
