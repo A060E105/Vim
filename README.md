@@ -5,6 +5,8 @@ let mapleader = "-"
 
 `F2` 顯示/關閉行號
 
+`F6` 開啟/關閉Source Explorer
+
 `F7` 開啟/關閉Taglist
 
 `F8` 開啟/關閉目錄
