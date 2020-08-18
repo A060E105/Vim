@@ -56,7 +56,7 @@ set statusline=[%{expand('%:p')}][%{strlen(&fenc)?&fenc:&enc},\ %{&ff},\ %{strle
 nnoremap <silent> <leader>l :<C-u>call StatusLineToggle()<CR>
 
 " 狀態列會使用到的函式
-function ShowPaste()
+function! ShowPaste()
     if (&paste == 1)
         return "[paste]"
     else
@@ -64,7 +64,7 @@ function ShowPaste()
     endif
 endfunction
 
-function IsBinary()
+function! IsBinary()
     if (&binary == 0)
         return ""
     else
@@ -72,7 +72,7 @@ function IsBinary()
     endif
 endfunction
 
-function FileSize()
+function! FileSize()
     let bytes = getfsize(expand("%:p"))
     if bytes <= 0
         return "[Empty]"
@@ -86,7 +86,7 @@ function FileSize()
     endif
 endfunction
 
-function StatusLineToggle()
+function! StatusLineToggle()
     if (&laststatus == 1)
         set laststatus=2
     elseif (&laststatus == 2)
