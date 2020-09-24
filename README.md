@@ -75,3 +75,14 @@ https://github.com/wesleyche/SrcExpl
 ##### git
 git clone https://github.com/wesleyche/SrcExpl.git
 
+
+---
+
+# git bash for windows using tmux
+
+```bash
+$ git clone https://github.com/xnng/bash.git
+$ cd bash
+$ cp tmux/bin/* /usr/bin
+$ cp tmux/share/* /usr/share -r
+```
