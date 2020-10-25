@@ -13,11 +13,14 @@ set autochdir                   " 自動切換到當前文件的所在目錄
 set nocompatible                " 關閉相容模式，不與vi相容
 set autoindent                  " 啟用自動縮排
 set cindent                     " 啟用C、C++風格的縮排
+set smartindent                 " 啟用智慧縮排
 set ruler                       " 開啟右下角遊標座標
 set showcmd                     " 顯示目前所執行的指令
 set showmode                    " 顯示目前的模式
 set tabstop=4                   " Tab鍵的寬度
 set shiftwidth=4                " 縮排時移動一次的寬度
+set softtabstop=4               " tab與space的混合
+set expandtab                   " 將tab轉換成空格
 set hlsearch                    " 搜尋結果高亮提示
 set incsearch                   " 啟用加強版搜尋功能
 set history=200                 " 歷史記錄為200筆
