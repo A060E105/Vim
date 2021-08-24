@@ -31,6 +31,11 @@ $ sudo cp -a colors/ /usr/share/vim/vim80/
 
 ## 套件管理
 
+## Vundle
+```bash
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
 ### NERDTree 下載網址
 ###### github
 https://github.com/scrooloose/nerdtree
