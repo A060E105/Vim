@@ -15,11 +15,14 @@ Plugin 'itchyny/vim-gitbranch'
 Plugin 'itchyny/lightline.vim'
 " Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-matchit'
 
 call vundle#end()
 filetype plugin indent on
 
 " set background=dark           " 設定背景色為淡色
+
+packadd! matchit
 
 let mapleader = "-"     " 設定前綴
 
